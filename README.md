@@ -1,3 +1,3 @@
 # website
 
-Scale ETH and regenerative construction..
+ETH scales regenerative construction..
