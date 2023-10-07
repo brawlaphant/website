@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Media</title>
+    <title>Ethereum Proof of Environment Submission</title>
 </head>
 <body>
-    <h1>Upload Your Media</h1>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
-        
-        <label for="ethereumAddress">Ethereum Wallet Address:</label>
-        <input type="text" id="ethereumAddress" name="ethereumAddress"><br><br>
-        
-        <label for="agreement">Agree to Terms:</label>
-        <input type="checkbox" id="agreement" name="agreement" required><br><br>
-
-        <label for="media">Upload Media (Image/Video):</label>
-        <input type="file" id="media" name="media" accept="image/*,video/*" required><br><br>
-
-        <input type="submit" value="Upload">
+    <h1>Ethereum Proof of Environment Submission</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <div>
+            <label for="media">Upload Media (Image or Video):</label>
+            <input type="file" id="media" name="media" accept="image/*,video/*" required>
+        </div>
+        <div>
+            <label for="ethAddress">Ethereum Address:</label>
+            <input type="text" id="ethAddress" name="ethAddress" required>
+        </div>
+        <div>
+            <label for="agreement">
+                <input type="checkbox" id="agreement" name="agreement" required>
+                I agree to the PoE agreement
+            </label>
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
     </form>
 </body>
 </html>
