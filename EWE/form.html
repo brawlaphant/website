@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Media</title>
+</head>
+<body>
+    <h1>Upload Your Media</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+        
+        <label for="ethereumAddress">Ethereum Wallet Address:</label>
+        <input type="text" id="ethereumAddress" name="ethereumAddress"><br><br>
+        
+        <label for="agreement">Agree to Terms:</label>
+        <input type="checkbox" id="agreement" name="agreement" required><br><br>
+
+        <label for="media">Upload Media (Image/Video):</label>
+        <input type="file" id="media" name="media" accept="image/*,video/*" required><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
